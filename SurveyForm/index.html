@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Product Research Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Product Research Survey</h1>
+    <p id="description">Thank you for taking the time to review our product</p>
+    <form id="survey-form" action="https://register-demo.freecodecamp.org">
+        <fieldset>
+            <label id="name-label">
+                Name <input id="name" type="text" placeholder="Enter your name" required />
+            </label>
+            <label id="email-label">
+              Email <input id="email" type="email" placeholder="Enter your email" required /></label>
+            <label id="number-label">
+              Age (optional) <input id="number" type="number" placeholder="13" min="13" max="120"/>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>How was the overall experience using our product?
+                <select id="dropdown" name="referrer">
+                  <option value="">(select one)</option>
+                  <option value="1">Awesome</option>
+                  <option value="2">Good</option>
+                  <option value="3">Average</option>
+                  <option value="4">Bad</option>
+                  <option value="5">Terrible</option>
+                </select>
+              </label>
+        </fieldset>
+        <fieldset>
+            <label>Would you use this product again?</label>
+            <label><input value="yes" type="radio" name="answer" class="inline" /> Yes</label>
+            <label><input value="no" type="radio" name="answer" class="inline" /> No</label>
+            <label><input value="not sure" type="radio" name="answer" class="inline" /> Not sure</label>
+        </fieldset>
+        <fieldset>
+            <label>What could we improve about this product? </label>
+            <input value="6" type="checkbox" name="improve" class="inline" required />Appearance</label>
+            <input value="6" type="checkbox" name="improve" class="inline" required />Functionality</label>
+            <input value="7" type="checkbox" name="improve" class="inline" required />Quality</label>
+            <input value="8" type="checkbox" name="improve" class="inline" required />Value</label>
+            <input value="9" type="checkbox" name="improve" class="inline" required />Other</label>
+        </fieldset>
+        <fieldset>
+            <label>Any comments or suggestions?
+                <textarea name="comments" rows="5" cols="50" placeholder="Enter your comment here..."></textarea>
+                    </label>
+        </fieldset>
+        <input type="submit" id="submit" />
+    </form>
+</body>
+</html>
